@@ -13,7 +13,7 @@ h5{
   border-top: 1px dashed #2C3639;
 }
 
-.container{
+.container-fluid{
   margin-left: 0;
   margin-right: 0;
 }
@@ -142,11 +142,11 @@ h5{
 .persen{
   border: hidden;
   background-color: transparent;
-  width: 40px;
-  font-size: 10px;
-  height: 15px;
+  width: 50px;
+  font-size: 13px;
+  height: 20px;
   color: #2C3639;
-  margin-top: 8px;
+  margin-top: 6px;
   margin-left: 10px;
 }
 
@@ -178,11 +178,27 @@ span{
   .cardbody{
     border: 1px solid rgb(224, 222, 222);
     background-color: rgb(248, 247, 247);
+    margin: 12px 6px;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 380px;
+  }
+  .container-fluid{
+    margin: auto;
+  }
+}
+
+@media all and (min-width:768px) and (max-width: 1024px) {
+  .cardbody{
+    border: 1px solid rgb(224, 222, 222);
+    background-color: rgb(248, 247, 247);
     margin: 12px 15px;
     padding: 2px 15px;
     border-radius: 5px;
     font-size: 14px;
     font-weight: bold;
-    width: 380px;
+    width: 200px;
   }
 }
