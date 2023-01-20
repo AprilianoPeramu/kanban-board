@@ -9,7 +9,7 @@ const Kanban = () => {
     return (
         <div>
             <Navbar />
-            <div className="container-fluid">
+            <div className="container-fluid mb-4">
                 <div className="row justify-content-center">
                     <div className="col-md-3 ">
                         <div className="card">
@@ -23,7 +23,7 @@ const Kanban = () => {
                                 <p>Re-desinged the zero-g doggie bags. No more spills!</p>
                                 <hr className='lines' />
                                 <div className="bar d-flex ">
-                                    <ProgressBar now={100} variant="success" className='progress mt-2' />
+                                    <ProgressBar now={100} variant="warna-bar" className='progress mt-2' />
                                     <BsFillCheckCircleFill className='icon1 ms-2 mt-2' />
                                     <button className='iconcentang mb-3'><BsThreeDots /></button>
                                 </div>
@@ -32,9 +32,9 @@ const Kanban = () => {
                                 <p className='mt-2 mb-2'>Bundle interplanetary analystic for improved transmission</p>
                                 <hr className='lines' />
                                 <div className="bar d-flex ">
-                                    <ProgressBar now={30} className='progress mt-2' /><span className='persen'> 30 %</span>
+                                    <ProgressBar now={30} variant="warna-bar1" className='progress mt-2' /><span className='persen'> 30 %</span>
                                     {/* <BsFillCheckCircleFill className='icon1 ms-2 mt-2'/> */}
-                                    <button className='icon mb-3'><BsThreeDots /></button>
+                                    <button className='icon'><BsThreeDots /></button>
                                 </div>
                             </div>
                             <button className='icons mt-2 mb-2'><CiCirclePlus className='fs-5' /><span> New Task</span></button>
@@ -66,7 +66,7 @@ const Kanban = () => {
                                 <p className='mt-2 mb-2'>Data Migration: Performance & Culture End Game</p>
                                 <hr className='lines' />
                                 <div className="bar d-flex ">
-                                    <ProgressBar now={60} className='progress mt-2' /><span className='persen'> 60 %</span>
+                                    <ProgressBar now={60} variant="warna-bar1" className='progress mt-2' /><span className='persen'> 60 %</span>
                                     {/* <BsFillCheckCircleFill className='icon1 ms-2 mt-2'/> */}
                                     <button className='icon mb-3'><BsThreeDots /></button>
                                 </div>
@@ -86,7 +86,7 @@ const Kanban = () => {
                                 <p className='mt-2 mb-2'>Bundle interplanetary analystic for improved transmission</p>
                                 <hr className='lines' />
                                 <div className="bar d-flex ">
-                                    <ProgressBar now={20} className='progress mt-2' /><span className='persen'> 20 %</span>
+                                    <ProgressBar now={20} variant="warna-bar1" className='progress mt-2' /><span className='persen'> 20 %</span>
                                     {/* <BsFillCheckCircleFill className='icon1 ms-2 mt-2'/> */}
                                     <button className='icon mb-3'><BsThreeDots /></button>
                                 </div>

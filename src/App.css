@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;900&family=Roboto:wght@300;400;500;700&display=swap');
 
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 h5{
   font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  font-style: normal;
   margin-top: 10px;
 }
 
@@ -19,47 +22,52 @@ h5{
 
 .butn{
   color: #fff;
-  background-color: #00BFA5;
-  border-color: #00BFA5;
+  background-color: #01959F;
+  border-color: #01959F;
   border: 8px;
   border-radius: 8px;
   font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  font-style: normal;
   margin: 4px 2px;
   padding: 4px 15px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card{
-  border: 1px solid #00BFA5;
-  background-color: #f3faf7;
+  border: 1px solid #01959F;
+  background-color: #F7FEFF;
   border-radius: 4px;
   margin: 10px 4px;
   width: fit-content;
 }
 .card1{
-  border: 1px solid #f5b184;
-  background-color: #faf7f3;
+  border: 1px solid #FEEABC;
+  background-color: #FFFCF5;
   border-radius: 4px;
   margin: 10px 4px;
   width: fit-content;
 }
 .card2{
-  border: 1px solid #fdc6c6;
-  background-color: #fff9f8;
+  border: 1px solid #F5B1B7;
+  background-color: #FFFAFA;
   border-radius: 4px;
   margin: 10px 4px;
   width: fit-content;
 }
 .card3{
-  border: 1px solid #a9d8f8;
-  background-color: #f2f7fa;
+  border: 1px solid #B8DBCA;
+  background-color: #F8FBF9;
   border-radius: 4px;
   margin: 10px 4px;
   width: fit-content;
 }
 
 .card-titles{
-  color: #00BFA5;
-  border: 1px solid #00BFA5;
+  color: #01959F;
+  border: 1px solid #4DB5BC;
+  background: #F7FEFF;
   border-radius: 5px;
   font-size: 12px;
   margin: 12px 15px;
@@ -69,8 +77,8 @@ h5{
 }
 
 .card-titles1{
-  color: #f78c4e;
-  border: 1px solid #fdb173;
+  color: #FA9810;
+  border: 1px solid #FEEABC;
   border-radius: 5px;
   font-size: 12px;
   margin: 12px 15px;
@@ -80,8 +88,8 @@ h5{
 }
 
 .card-titles2{
-  color: #fc5a5a;
-  border: 1px solid #fdc6c6;
+  color: #E11428;
+  border: 1px solid #F5B1B7;
   border-radius: 5px;
   font-size: 12px;
   margin: 12px 15px;
@@ -91,8 +99,8 @@ h5{
 }
 
 .card-titles3{
-  color: #34aabe;
-  border: 1px solid #34aabe;
+  color: #43936C;
+  border: 1px solid #B8DBCA;
   border-radius: 5px;
   font-size: 12px;
   margin: 12px 15px;
@@ -105,29 +113,35 @@ h5{
 .subtitle{
   height: 25px ;
   font-size: 12px;
-  padding: 2px 15px;
+  padding: 0 10px;
   font-weight: bold;
   color: #2C3639;
 }
 
 .cardbody{
-  border: 1px solid rgb(224, 222, 222);
-  background-color: rgb(248, 247, 247);
-  margin: 12px 15px;
+  border: 1px solid #E0E0E0;
+  background-color: #FAFAFA;
+  margin: 15px 15px;
   padding: 2px 15px;
   border-radius: 5px;
   font-size: 14px;
   font-weight: bold;
-  width: 290px;
+  width: 300px;
 }
 
 .icon{
   border: hidden;
   background-color: transparent;
-  width: 25px;
+  width: 30px;
   font-size: 20px;
-  height: 15px;
-  margin-left: 5px;
+  height: 30px;
+  margin-left: 50px;
+  color: #757575;
+  border-radius: 4px;
+}
+
+.icon:hover{
+  background: #EDEDED;
 }
 
 .icon1{
@@ -136,7 +150,7 @@ h5{
   width: 30px;
   font-size: 30px;
   height: 15px;
-  color: #198754;
+  color: #43936C;
 }
 
 .persen{
@@ -163,14 +177,30 @@ h5{
 .iconcentang{
   border: hidden;
   background-color: transparent;
-  width: 25px;
+  width: 30px;
   font-size: 20px;
-  height: 15px;
-  margin-left: 5px;
+  height: 30px;
+  margin-left: 72px;
+  color: #757575;
+}
+
+.iconcentang:hover{
+  background: #EDEDED;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
 }
 
 span{
   color: #2C3639;
+}
+
+.bg-warna-bar{
+  background-color: #43936C!important;
+  width: 50%;
+}
+.bg-warna-bar1{
+  background-color: #01959F!important;
 }
 
 .progress{
@@ -200,18 +230,31 @@ span{
   .icon{
     border: hidden;
     background-color: transparent;
-    width: 25px;
+    width: 30px;
     font-size: 20px;
-    height: 15px;
-    margin-left: 90px;
+    height: 30px;
+    margin-left: 100px;
+    color: #757575;
+    border-radius: 4px;
   }
   .iconcentang{
     border: hidden;
     background-color: transparent;
-    width: 25px;
+    width: 30px;
     font-size: 20px;
-    height: 15px;
-    margin-left: 112px;
+    height: 30px;
+    margin-left: 115px;
+    color: #757575;
+  }
+  .persen{
+    border: hidden;
+    background-color: transparent;
+    width: 50px;
+    font-size: 12px;
+    height: 20px;
+    color: #2C3639;
+    margin-top: 6px;
+    margin-left: 10px;
   }
 }
 
@@ -227,7 +270,7 @@ span{
     width: 175px; 
   }
   .card{
-    border: 1px solid #00BFA5;
+    border: 1px solid #01959F;
     background-color: #f3faf7;
     border-radius: 4px;
     margin: 10px 4px;
@@ -237,10 +280,43 @@ span{
   .icon{
     border: hidden;
     background-color: transparent;
-    width: 25px;
+    width: 30px;
     font-size: 20px;
+    height: 30px;
+    margin-left: 10px;
+    color: #757575;
+    border-radius: 4px;
+  }
+  .persen{
+    border: hidden;
+    background-color: transparent;
+    width: 50px;
+    font-size: 12px;
+    height: 20px;
+    color: #2C3639;
+    margin-top: 6px;
+    margin-left: 10px;
+  }
+  .bg-warna-bar{
+    background-color: #43936C!important;
+    width: 100%;
+  }
+  .progress{
+    background-color: #d8d8d8;
+    border-radius: 20px;
+    position: relative;
+    margin: 15px 0;
     height: 15px;
-    margin-left: 5px;
+    width: 50%;
+  }
+  .iconcentang{
+    border: hidden;
+    background-color: transparent;
+    width: 30px;
+    font-size: 20px;
+    height: 30px;
+    margin-left: 20px;
+    color: #757575;
   }
 }
 
