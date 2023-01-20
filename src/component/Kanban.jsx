@@ -25,7 +25,7 @@ const Kanban = () => {
                                 <div className="bar d-flex ">
                                     <ProgressBar now={100} variant="success" className='progress mt-2' />
                                     <BsFillCheckCircleFill className='icon1 ms-2 mt-2' />
-                                    <button className='icon ms-5 mb-3'><BsThreeDots /></button>
+                                    <button className='iconcentang mb-3'><BsThreeDots /></button>
                                 </div>
                             </div>
                             <div className="cardbody mt-2 mb-2">
@@ -34,7 +34,7 @@ const Kanban = () => {
                                 <div className="bar d-flex ">
                                     <ProgressBar now={30} className='progress mt-2' /><span className='persen'> 30 %</span>
                                     {/* <BsFillCheckCircleFill className='icon1 ms-2 mt-2'/> */}
-                                    <button className='icon ms-5 mb-3'><BsThreeDots /></button>
+                                    <button className='icon mb-3'><BsThreeDots /></button>
                                 </div>
                             </div>
                             <button className='icons mt-2 mb-2'><CiCirclePlus className='fs-5' /><span> New Task</span></button>
@@ -68,7 +68,7 @@ const Kanban = () => {
                                 <div className="bar d-flex ">
                                     <ProgressBar now={60} className='progress mt-2' /><span className='persen'> 60 %</span>
                                     {/* <BsFillCheckCircleFill className='icon1 ms-2 mt-2'/> */}
-                                    <button className='icon ms-5 mb-3'><BsThreeDots /></button>
+                                    <button className='icon mb-3'><BsThreeDots /></button>
                                 </div>
                             </div>
                             <button className='icons mt-2 mb-2'><CiCirclePlus className='fs-5' /><span> New Task</span></button>
@@ -88,7 +88,7 @@ const Kanban = () => {
                                 <div className="bar d-flex ">
                                     <ProgressBar now={20} className='progress mt-2' /><span className='persen'> 20 %</span>
                                     {/* <BsFillCheckCircleFill className='icon1 ms-2 mt-2'/> */}
-                                    <button className='icon ms-5 mb-3'><BsThreeDots /></button>
+                                    <button className='icon mb-3'><BsThreeDots /></button>
                                 </div>
                             </div>
                             <button className='icons mt-2 mb-2'><CiCirclePlus className='fs-5' /><span> New Task</span></button>
