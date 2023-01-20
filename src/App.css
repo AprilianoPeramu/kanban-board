@@ -174,31 +174,36 @@ span{
 	width: 100%;
 }
 
-@media all and (min-width:375px) and (max-width: 480px) {
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .cardbody{
     border: 1px solid rgb(224, 222, 222);
     background-color: rgb(248, 247, 247);
-    margin: 12px 6px;
+    margin: 12px 4px;
     padding: 2px 6px;
     border-radius: 5px;
     font-size: 14px;
     font-weight: bold;
-    width: 380px;
+    width: 380px; 
   }
   .container-fluid{
-    margin: auto;
+    display: flex;
   }
+  .navline{
+    width: 420px;
+  }
+
 }
 
-@media all and (min-width:768px) and (max-width: 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .cardbody{
     border: 1px solid rgb(224, 222, 222);
     background-color: rgb(248, 247, 247);
-    margin: 12px 15px;
-    padding: 2px 15px;
+    margin: 12px 4px;
+    padding: 2px 6px;
     border-radius: 5px;
     font-size: 14px;
     font-weight: bold;
-    width: 200px;
+    width: 225px; 
   }
 }

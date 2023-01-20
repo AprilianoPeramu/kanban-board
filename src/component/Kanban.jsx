@@ -20,7 +20,7 @@ const Kanban = () => {
                                 <p>January - March</p>
                             </div>
                             <div className="cardbody">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam enim minima accusantium harum reiciendis?</p>
+                                <p>Re-desinged the zero-g doggie bags. No more spills!</p>
                                 <hr className='lines' />
                                 <div className="bar d-flex ">
                                     <ProgressBar now={100} variant="success" className='progress mt-2' />
@@ -29,7 +29,7 @@ const Kanban = () => {
                                 </div>
                             </div>
                             <div className="cardbody mt-2 mb-2">
-                                <p className='mt-2 mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam enim minima accusantium harum reiciendis?</p>
+                                <p className='mt-2 mb-2'>Bundle interplanetary analystic for improved transmission</p>
                                 <hr className='lines' />
                                 <div className="bar d-flex ">
                                     <ProgressBar now={30} className='progress mt-2' /><span className='persen'> 30 %</span>
@@ -63,7 +63,7 @@ const Kanban = () => {
                                 <p>July - September</p>
                             </div>
                             <div className="cardbody">
-                                <p className='mt-2 mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam enim minima accusantium harum reiciendis?</p>
+                                <p className='mt-2 mb-2'>Data Migration: Performance & Culture End Game</p>
                                 <hr className='lines' />
                                 <div className="bar d-flex ">
                                     <ProgressBar now={60} className='progress mt-2' /><span className='persen'> 60 %</span>
@@ -83,7 +83,7 @@ const Kanban = () => {
                                 <p>October - December</p>
                             </div>
                             <div className="cardbody">
-                                <p className='mt-2 mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam enim minima accusantium harum reiciendis?</p>
+                                <p className='mt-2 mb-2'>Bundle interplanetary analystic for improved transmission</p>
                                 <hr className='lines' />
                                 <div className="bar d-flex ">
                                     <ProgressBar now={20} className='progress mt-2' /><span className='persen'> 20 %</span>

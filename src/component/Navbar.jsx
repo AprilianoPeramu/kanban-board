@@ -7,7 +7,7 @@ const Navbar = () => {
         <h5 className='ms-4 mb-2'>Product Roadmap</h5>
         <button className='butn ms-2 justify-content-start'> + Add New Group</button>
         </div>
-        <hr/>
+        <hr className='navline'/>
     </div>
   )
 }
