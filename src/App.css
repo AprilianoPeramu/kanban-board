@@ -232,6 +232,7 @@ span{
     border-radius: 4px;
     margin: 10px 4px;
     width: fit-content;
+    column-gap: 20px;
   }
   .icon{
     border: hidden;
@@ -240,5 +241,18 @@ span{
     font-size: 20px;
     height: 15px;
     margin-left: 5px;
+  }
+}
+
+@media only screen  and (min-width : 1224px) {
+  .cardbody{
+    border: 1px solid rgb(224, 222, 222);
+    background-color: rgb(248, 247, 247);
+    margin: 12px 4px;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 300px; 
   }
 }
