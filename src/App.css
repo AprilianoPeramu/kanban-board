@@ -12,6 +12,12 @@ h5{
   margin-top: 10px;
 }
 
+.nav-icon{
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
 .lines{
   border-top: 1px dashed #2C3639;
 }
