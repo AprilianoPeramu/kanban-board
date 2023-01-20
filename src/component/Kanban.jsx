@@ -37,7 +37,7 @@ const Kanban = () => {
                                     <button className='icon'><BsThreeDots /></button>
                                 </div>
                             </div>
-                            <button className='icons mt-2 mb-2'><CiCirclePlus className='fs-5' /><span> New Task</span></button>
+                            <button className='icons'><CiCirclePlus className='iconss' /><span> New Task</span></button>
                         </div>
                     </div>
                     <div className="col-md-3">
@@ -51,7 +51,7 @@ const Kanban = () => {
                             <div className="cardbody">
                                 <p className='mt-2 mb-2'>No Task</p>
                             </div>
-                            <button className='icons mt-2 mb-2'><CiCirclePlus className='fs-5' /><span> New Task</span></button>
+                            <button className='icons mt-2 mb-2'><CiCirclePlus className='iconss' /><span> New Task</span></button>
                         </div>
                     </div>
                     <div className="col-md-3">
@@ -71,7 +71,7 @@ const Kanban = () => {
                                     <button className='icon mb-3'><BsThreeDots /></button>
                                 </div>
                             </div>
-                            <button className='icons mt-2 mb-2'><CiCirclePlus className='fs-5' /><span> New Task</span></button>
+                            <button className='icons mt-2 mb-2'><CiCirclePlus className='iconss' /><span> New Task</span></button>
                         </div>
                     </div>
                     <div className="col-md-3">
@@ -91,7 +91,7 @@ const Kanban = () => {
                                     <button className='icon mb-3'><BsThreeDots /></button>
                                 </div>
                             </div>
-                            <button className='icons mt-2 mb-2'><CiCirclePlus className='fs-5' /><span> New Task</span></button>
+                            <button className='icons mt-2 mb-2'><CiCirclePlus className='iconss' /><span> New Task</span></button>
                         </div>
                     </div>
                 </div>

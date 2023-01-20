@@ -132,7 +132,7 @@ h5{
   border-radius: 5px;
   font-size: 14px;
   font-weight: bold;
-  width: 300px;
+  width: 400px;
 }
 
 .icon{
@@ -141,7 +141,8 @@ h5{
   width: 30px;
   font-size: 20px;
   height: 30px;
-  margin-left: 50px;
+  margin-left: 0;
+  margin-bottom: 15px;
   color: #757575;
   border-radius: 4px;
 }
@@ -171,13 +172,21 @@ h5{
 }
 
 .icons{
-  color: #2C3639;
+  color: #333333;
   border: hidden;
   background-color: transparent;
   width: 100px;
   font-size: 14px;
   font-weight: bolder;
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.iconss{
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .iconcentang{
@@ -186,27 +195,28 @@ h5{
   width: 30px;
   font-size: 20px;
   height: 30px;
-  margin-left: 72px;
+  margin-left: 16px;
+  margin-bottom: 15px;
   color: #757575;
+  border-radius: 4px;
 }
 
 .iconcentang:hover{
   background: #EDEDED;
-  border-radius: 4px;
-  width: 30px;
-  height: 30px;
 }
 
 span{
-  color: #2C3639;
+  color: #1D1F20;
+  font-size: 12px;
 }
 
 .bg-warna-bar{
   background-color: #43936C!important;
-  width: 50%;
+  width: 100%;
 }
 .bg-warna-bar1{
   background-color: #01959F!important;
+  width: 100%;
 }
 
 .progress{
@@ -215,7 +225,7 @@ span{
 	position: relative;
 	margin: 15px 0;
 	height: 15px;
-	width: 50%;
+	width: 70%;
 }
 
 
@@ -223,8 +233,8 @@ span{
   .cardbody{
     border: 1px solid rgb(224, 222, 222);
     background-color: rgb(248, 247, 247);
-    margin: 12px 4px;
-    padding: 2px 6px;
+    margin: 12px 5px;
+    padding: 2px 20px;
     border-radius: 5px;
     font-size: 14px;
     font-weight: bold;
@@ -239,7 +249,7 @@ span{
     width: 30px;
     font-size: 20px;
     height: 30px;
-    margin-left: 100px;
+    margin-left: 15px;
     color: #757575;
     border-radius: 4px;
   }
@@ -249,7 +259,7 @@ span{
     width: 30px;
     font-size: 20px;
     height: 30px;
-    margin-left: 115px;
+    margin-left: 33px;
     color: #757575;
   }
   .persen{
@@ -262,6 +272,11 @@ span{
     margin-top: 6px;
     margin-left: 10px;
   }
+  .bg-warna-bar1{
+    background-color: #01959F!important;
+    width: 100%;
+  }
+  
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -289,9 +304,8 @@ span{
     width: 30px;
     font-size: 20px;
     height: 30px;
-    margin-left: 10px;
+    margin-left: 5px;
     color: #757575;
-    border-radius: 4px;
   }
   .persen{
     border: hidden;
@@ -303,17 +317,14 @@ span{
     margin-top: 6px;
     margin-left: 10px;
   }
-  .bg-warna-bar{
-    background-color: #43936C!important;
-    width: 100%;
-  }
+  
   .progress{
     background-color: #d8d8d8;
     border-radius: 20px;
     position: relative;
     margin: 15px 0;
     height: 15px;
-    width: 50%;
+    width: 70%;
   }
   .iconcentang{
     border: hidden;
@@ -321,7 +332,7 @@ span{
     width: 30px;
     font-size: 20px;
     height: 30px;
-    margin-left: 20px;
+    margin-left: 5px;
     color: #757575;
   }
 }
@@ -331,10 +342,10 @@ span{
     border: 1px solid rgb(224, 222, 222);
     background-color: rgb(248, 247, 247);
     margin: 12px 4px;
-    padding: 2px 6px;
+    padding: 4px 20px;
     border-radius: 5px;
     font-size: 14px;
     font-weight: bold;
-    width: 300px; 
+    width: 320px; 
   }
 }
