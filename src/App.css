@@ -136,7 +136,7 @@ h5{
   width: 30px;
   font-size: 30px;
   height: 15px;
-  color: #00BFA5;
+  color: #198754;
 }
 
 .persen{
@@ -166,7 +166,6 @@ span{
 }
 
 .progress{
-  background: #00BFA5;
   background-color: #d8d8d8;
 	border-radius: 20px;
 	position: relative;

@@ -22,7 +22,7 @@ const Kanban = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam enim minima accusantium harum reiciendis?</p>
                             <hr className='lines' />
                             <div className="bar d-flex ">
-                                <ProgressBar now={100} className='progress mt-2' />
+                                <ProgressBar now={100} variant="success" className='progress mt-2' />
                                 <BsFillCheckCircleFill className='icon1 ms-2 mt-2' />
                                 <button className='icon ms-5 mb-3'><BsThreeDots /></button>
                             </div>
