@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 
 export default function Modal() {
@@ -6,19 +6,22 @@ export default function Modal() {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("")
     
-    
     const createGroup = () => {
-        
+
         const data = {
             title: title,
             description: description
         }
-        axios
+        
+    
+            axios
             .post('https://todo-api-18-140-52-65.rakamin.com/todos', {
-                headers: { 
-                    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE2ODI5ODk2NTh9.KGyKETdCQ8ScDzmoZ1t3SVnEd7k1Fnre6am0N4bJPV0' 
-                },
-                body: data,
+                body: JSON.stringify(data),
+
+                headers: { 'Content-Type': 'application/json',
+                    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE2ODMwMDIxOTh9.v_Nc9mte3oUNisEF2absZyrcuNR8MbLtQEaVtFydwto' 
+                }
+                
             })
             .then(({ data }) => {
                 console.log('success')
@@ -26,10 +29,11 @@ export default function Modal() {
             .catch((err) => {
                 console.log(err);
             });
+       
     }
 
     return (
-        <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade " id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-dialog-centered">
                 <div className="modal-content">
                     <div className="modal-body">

@@ -15,9 +15,9 @@ export default function List() {
         axios
             .post('https://todo-api-18-140-52-65.rakamin.com/todos/1/items', {
                 headers: { 
-                    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE2ODI5ODk2NTh9.KGyKETdCQ8ScDzmoZ1t3SVnEd7k1Fnre6am0N4bJPV0' 
+                    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE2ODI5OTgzMTB9.MTJPrdfEzZf7lmAhrUP0-9lvK7xIuMMCFth-u35EjNc' 
                 },
-                body: data,
+                Body: data,
             })
             .then(({ data }) => {
                 console.log('success')
