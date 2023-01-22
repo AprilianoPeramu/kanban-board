@@ -43,6 +43,7 @@ const Kanban = () => {
                                 <div className="bar d-flex ">
                                     <ProgressBar now={100} variant="warna-bar" className='progress mt-2' />
                                     <BsFillCheckCircleFill className='icon1 ms-2 mt-2' />
+                                    <button className='icon'><BsThreeDots /></button>
                                 </div>
                             </div>
                             <div className="cardbody mt-2 mb-2">
