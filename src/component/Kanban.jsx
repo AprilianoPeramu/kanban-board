@@ -14,7 +14,7 @@ const Kanban = () => {
     useEffect(() => {
         axios
             .get('https://todo-api-18-140-52-65.rakamin.com/todos', {
-                headers: { Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE2ODI5NTU5MjJ9.VFydL0587a0hTIVuGh5dwbqToxfECV_8MLO39zsfULk' },
+                headers: { Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE2ODI5ODk2NTh9.KGyKETdCQ8ScDzmoZ1t3SVnEd7k1Fnre6am0N4bJPV0' },
             })
             .then(({ data }) => {
                 setGetData(data);
