@@ -12,6 +12,26 @@ h5{
   margin-top: 10px;
 }
 
+.input-bar{
+  width: 30%;
+}
+
+.card card-body{
+  position: relative;
+}
+
+.menu-icon{
+  width: 20px;
+  position: absolute;
+  top: 12px;
+  left: 25px;
+}
+
+.modal-header{
+  margin-right: 0px;
+  border-bottom: none;
+}
+
 .nav-icon{
   color: #fff;
   font-size: 18px;
@@ -75,6 +95,23 @@ h5{
   color: #fff;
 }
 
+.butn-modal1{
+  background: #01959F;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+  width: 120px;
+  height: 32px;
+  border-radius: 8px;
+  padding: 4px 16px;
+  color: #fff;
+}
+
+.butn-modal1:hover{
+  background: #01959F;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+  color: #fff;
+  border-radius: 8px;
+}
+
 .butn-modal:hover{
   background: #01959F;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
@@ -134,7 +171,7 @@ h5{
   font-size: 12px;
   margin: 12px 15px;
   padding: 2px 15px;
-  width: 105px;
+  width: 150px;
   height: 25px;
 }
 

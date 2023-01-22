@@ -5,15 +5,17 @@ import { CiCirclePlus } from "react-icons/ci";
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import axios from 'axios';
 import Modal from './Modal';
+import List from './List';
 
 
 const Kanban = () => {
-
     const [getData, setGetData] = useState([]);
 
     useEffect(() => {
         axios
-            .get('https://todo-api-18-140-52-65.rakamin.com/todos')
+            .get('https://todo-api-18-140-52-65.rakamin.com/todos', {
+                headers: { Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE2ODI5NTU5MjJ9.VFydL0587a0hTIVuGh5dwbqToxfECV_8MLO39zsfULk' },
+            })
             .then(({ data }) => {
                 setGetData(data);
             })
@@ -21,27 +23,19 @@ const Kanban = () => {
                 console.log(err);
             });
     }, []);
-
-    return (
-        <div>
-            <Navbar />
-            <DataTodo />
-        </div>
-    )
-}
-
-function DataTodo() {
     return (
         <>
+        <Navbar />
             <div className="container-fluid mb-4">
                 <div className="row justify-content-center">
-                    <div className="col-md-3 ">
+                    {getData?.map((todos) => (
+                    <div className="col-md-3 " key={todos?.id} >
                         <div className="card">
                             <div className="card-titles">
-                                <p>Group Task 1</p>
+                                <p>{todos?.title}</p>
                             </div>
                             <div className="subtitle">
-                                <p>January - March</p>
+                                <p>{todos?.description}</p>
                             </div>
                             <div className="cardbody">
                                 <p>Re-desinged the zero-g doggie bags. No more spills!</p>
@@ -49,7 +43,6 @@ function DataTodo() {
                                 <div className="bar d-flex ">
                                     <ProgressBar now={100} variant="warna-bar" className='progress mt-2' />
                                     <BsFillCheckCircleFill className='icon1 ms-2 mt-2' />
-                                    <button className='iconcentang mb-3'><a data-bs-toggle="modal" data-bs-target="#exampleModal"><BsThreeDots /></a></button>
                                 </div>
                             </div>
                             <div className="cardbody mt-2 mb-2">
@@ -61,66 +54,14 @@ function DataTodo() {
                                     <button className='icon'><BsThreeDots /></button>
                                 </div>
                             </div>
-                            <button className='icons'><CiCirclePlus className='iconss' /><span><a data-bs-toggle="modal" data-bs-target="#exampleModal"> New Task</a></span></button>
+                            <button className='icons mt-2 mb-2'><span><a data-bs-toggle="modal" data-bs-target="#exampleModal1"><CiCirclePlus className='iconss' /> New Task</a></span></button>
                         </div>
                     </div>
-                    <div className="col-md-3">
-                        <div className="card1">
-                            <div className="card-titles1">
-                                <p>Group Task 2</p>
-                            </div>
-                            <div className="subtitle">
-                                <p>April - June</p>
-                            </div>
-                            <div className="cardbody">
-                                <p className='mt-2 mb-2'>No Task</p>
-                            </div>
-                            <button className='icons mt-2 mb-2'><CiCirclePlus className='iconss' /><span> New Task</span></button>
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <div className="card2">
-                            <div className="card-titles2">
-                                <p>Group Task 3</p>
-                            </div>
-                            <div className="subtitle">
-                                <p>July - September</p>
-                            </div>
-                            <div className="cardbody">
-                                <p className='mt-2 mb-2'>Data Migration: Performance & Culture End Game</p>
-                                <hr className='lines' />
-                                <div className="bar d-flex ">
-                                    <ProgressBar now={60} variant="warna-bar1" className='progress mt-2' /><span className='persen'> 60 %</span>
-                                    {/* <BsFillCheckCircleFill className='icon1 ms-2 mt-2'/> */}
-                                    <button className='icon mb-3'><a data-bs-toggle="modal" data-bs-target="#exampleModal"><BsThreeDots /></a></button>
-                                </div>
-                            </div>
-                            <button className='icons mt-2 mb-2'><CiCirclePlus className='iconss' /><span> New Task</span></button>
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <div className="card3">
-                            <div className="card-titles3">
-                                <p>Group Task 4</p>
-                            </div>
-                            <div className="subtitle">
-                                <p>October - December</p>
-                            </div>
-                            <div className="cardbody">
-                                <p className='mt-2 mb-2'>Bundle interplanetary analystic for improved transmission</p>
-                                <hr className='lines' />
-                                <div className="bar d-flex ">
-                                    <ProgressBar now={20} variant="warna-bar1" className='progress mt-2' /><span className='persen'> 20 %</span>
-                                    {/* <BsFillCheckCircleFill className='icon1 ms-2 mt-2'/> */}
-                                    <button className='icon mb-3'><a data-bs-toggle="modal" data-bs-target="#exampleModal"><BsThreeDots /></a></button>
-                                </div>
-                            </div>
-                            <button className='icons mt-2 mb-2'><CiCirclePlus className='iconss' /><span> New Task</span></button>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
             <Modal></Modal>
+            <List></List>
         </>
 
     )
