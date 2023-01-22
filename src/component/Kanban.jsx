@@ -7,14 +7,13 @@ import axios from 'axios';
 import Modal from './Modal';
 import List from './List';
 
-
 const Kanban = () => {
     const [getData, setGetData] = useState([]);
 
     useEffect(() => {
         axios
             .get('https://todo-api-18-140-52-65.rakamin.com/todos', {
-                headers: { Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE2ODI5ODk2NTh9.KGyKETdCQ8ScDzmoZ1t3SVnEd7k1Fnre6am0N4bJPV0' },
+                headers: { Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE2ODI5NTU5MjJ9.VFydL0587a0hTIVuGh5dwbqToxfECV_8MLO39zsfULk' },
             })
             .then(({ data }) => {
                 setGetData(data);
@@ -43,7 +42,7 @@ const Kanban = () => {
                                 <div className="bar d-flex ">
                                     <ProgressBar now={100} variant="warna-bar" className='progress mt-2' />
                                     <BsFillCheckCircleFill className='icon1 ms-2 mt-2' />
-                                    <button className='icon'><BsThreeDots /></button>
+                                    <button className='iconcentang mb-3' ><a><BsThreeDots /></a></button>
                                 </div>
                             </div>
                             <div className="cardbody mt-2 mb-2">
