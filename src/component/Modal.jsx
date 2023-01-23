@@ -5,31 +5,26 @@ export default function Modal() {
 
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("")
-    
+
     const createGroup = () => {
 
         const data = {
             title: title,
             description: description
         }
-        
-    
-            axios
-            .post('https://todo-api-18-140-52-65.rakamin.com/todos', {
-                body: JSON.stringify(data),
-
-                headers: { 'Content-Type': 'application/json',
-                    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE2ODMwMDIxOTh9.v_Nc9mte3oUNisEF2absZyrcuNR8MbLtQEaVtFydwto' 
-                }
-                
-            })
+        axios({
+            method: "post",
+            url: "https://todo-api-18-140-52-65.rakamin.com/todos",
+            headers: { Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE2ODMwMDIxOTh9.v_Nc9mte3oUNisEF2absZyrcuNR8MbLtQEaVtFydwto' },
+            data: { title, description }
+        })
             .then(({ data }) => {
                 console.log('success')
             })
             .catch((err) => {
                 console.log(err);
             });
-       
+
     }
 
     return (
@@ -41,11 +36,11 @@ export default function Modal() {
                             <div className="mb-3">
                                 <h1 className="modal-title mb-3" id="exampleModalLabel">Add New Group</h1>
                                 <label htmlFor="recipient-name" className="col-form-label title">Title</label>
-                                <input 
+                                <input
                                     value={title}
                                     onChange={(e) => setTitle(e.target.value)}
-                                    type="text" 
-                                    className="form-control" 
+                                    type="text"
+                                    className="form-control"
                                     id="recipient-name"
                                     placeholder='Type your Title'
                                 />
@@ -53,9 +48,9 @@ export default function Modal() {
                             <div className="mb-3">
                                 <label htmlFor="message-text" className="col-form-label title">Description</label>
                                 <textarea
-                                    className="form-control" 
-                                    id="message-text" 
-                                    value={description} 
+                                    className="form-control"
+                                    id="message-text"
+                                    value={description}
                                     onChange={(e) => setDescription(e.target.value)}
                                     placeholder='Type your Description'
                                 >
